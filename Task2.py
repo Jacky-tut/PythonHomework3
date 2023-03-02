@@ -22,3 +22,7 @@
 
 # ноутбук
 # 12
+
+scrabble_dict = {1: 'aeioulnstrавеинорст', 2: 'dgдклмпу', 3: 'bcmpбгёья', 4: 'fhvwyйы', 5: 'kжзхцч', 8: 'jxшэю', 10: 'qzфщъ'}
+word = input('Введите слово: ')
+print(sum([key for i in word for key, value in scrabble_dict.items() if i in value]))
